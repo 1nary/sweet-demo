@@ -1,0 +1,380 @@
+body {
+    font-family: 'Josefin Sans', 'Noto Sans JP', sans-serif;
+    letter-spacing: 0.05em;
+    color: #3c301e;
+}
+
+img {
+    width: 100%;
+}
+
+.body.is-fixed {
+    overflow: hidden;
+}
+
+.page-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 48px;
+    height: 48px;
+    border-radius: 999px;
+    font-size: 12px;
+    z-index: 10;
+    background-color: #fff;
+    color: #000;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.graydisplay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(77, 77, 77, 0.687);
+    display: none;
+}
+
+.graydisplay img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    max-width: 40%;
+    height: auto;
+}
+
+/* header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid rgba(241, 238, 228, 0.25);
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+}
+
+.header-logo {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.header-nav-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.header-nav-link {
+    color: #fff;
+}
+
+.header-nav-item {
+    position: relative;
+    width: 100px;
+    text-align: center;
+}
+
+.toggle-list {
+    position: absolute;
+    color: #fff;
+    font-size: 14px;
+    background-color: #00000079;
+    width: 100px;
+    left: 0;
+    top: 38px;
+    padding: 10px 0;
+    display: none;
+}
+
+.toggle-list-item:nth-child(2) {
+    padding: 10px 0;
+}
+
+/* 共通クラス */
+.inner {
+    padding: 0 40px;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.section-heading-l {
+    color: #fff;
+}
+
+.section-heading-main {
+    font-size: 40px;
+    display: block;
+}
+
+.section-heading-sub {
+    font-size: 12px;
+    display: block;
+}
+
+/* aboutセクション */
+.about {
+    padding: 40px 0;
+    background-color: #f1eee4;
+}
+
+.about-text-contents {
+    margin-top: 20px;
+}
+
+.about-text {
+    font-size: 14px;
+    line-height: 2;
+}
+
+.about-text+.about-text {
+    margin-top: 16px;
+}
+
+/* menuセクション */
+.menu {
+    padding: 80px 0;
+    background-color: #f1eee4;
+}
+
+.menu-item+.menu-item {
+    margin-top: 62px;
+}
+
+.menu-name-contents {
+    text-align: center;
+    padding: 16px 10px;
+}
+
+.menu-name-main {
+    font-size: 18px;
+    display: block;
+}
+
+.menu-name-sub {
+    color: #a98c5f;
+    display: block;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.menu-text {
+    font-size: 14px;
+    color: #a98c5f;
+    margin-top: 16px;
+}
+
+.menu-img {
+    cursor: pointer;
+}
+
+/* shopセクション */
+.shop {
+    background: url(../img/sp/bg-shop.png) center center no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+}
+
+.shop-inner {
+    padding: 0 20px;
+}
+
+.shop-text {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.form {
+    margin-top: 40px;
+}
+
+.form-input {
+    width: 100%;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    font-family: 'Josefin Sans', 'Noto Sans JP', sans-serif;
+    padding: 14px;
+}
+
+.form-submit {
+    border-radius: 4px;
+    border: none;
+    font-family: 'Josefin Sans', 'Noto Sans JP', sans-serif;
+    display: block;
+    margin: 10px auto 0;
+    width: 120px;
+    padding: 12px 10px;
+    color: #fff;
+    background-color: #a98c5f;
+}
+
+/* footer */
+.footer {
+    background: #3c301e;
+    text-align: center;
+    padding-top: 46px;
+    color: #fff;
+}
+
+.footer-logo {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.footer-text {
+    font-size: 12px;
+}
+
+.footer-nav-list {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 0 20px;
+}
+
+.footer-nav-link-text {
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+.sns-image {
+    width: 56px;
+}
+
+.footer-copy-wrapper {
+    border-top: 1px solid rgba(241, 238, 228, 0.25);
+    padding: 12px;
+    margin-top: 46px;
+}
+
+.footer-copyright {
+    font-size: 12px;
+}
+
+/* タブレット、PCサイズの表示 */
+@media screen and (min-width: 768px) {
+    .header {
+        padding: 16px;
+    }
+
+    .header-inner {
+        max-width: 1080px;
+        padding: 0 40px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header-logo {
+        margin: 0;
+    }
+
+    .header-nav-link {
+        transition: opacity 0.3s;
+    }
+
+    .header-nav-link:hover {
+        opacity: 0.7;
+    }
+
+    .inner {
+        max-width: 1080px;
+        padding: 0 40px;
+        margin: 0 auto;
+    }
+
+    .about {
+        padding: 100px 0;
+    }
+
+    .about-text + .about-text {
+        margin-top: 30px;
+    }
+
+    .section-heading-main {
+        font-size: 64px;
+    }
+
+    .about-contents {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .about-text {
+        font-size: 15px;
+    }
+
+    .about-text-contents {
+        margin-top: 0;
+    }
+
+    .about-img {
+        width: 300px;
+    }
+
+    .menu {
+        padding: 0 0 100px;
+    }
+
+    .menu-list {
+        display: flex;
+        gap: 20px;
+    }
+
+    .menu-item+.menu-item {
+        margin-top: 0;
+    }
+
+    .shop {
+        background: url(../img/bg-shop.png) center center no-repeat;
+        background-size: cover;
+        padding: 60px 0;
+    }
+
+    .shop-inner {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .form {
+        display: flex;
+        gap: 20px;
+    }
+
+    .form-submit {
+        margin-top: 0;
+        transition: opacity 0.3s;
+    }
+
+    .form-submit:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
+
+    .footer-text {
+        margin-top: 12px;
+    }
+
+    .footer-nav-list {
+        gap: 40px;
+    }
+
+    .footer-copyright {
+        font-size: 13px;
+    }
+
+}
